@@ -1,0 +1,95 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background-color: #f3f3f3;
+  }
+  
+  .dashboard.dark {
+    background-color: #333;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar.dark {
+    background-color: #424242;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    margin-top: 20px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .menu-item.selected {
+    background-color: #f3be00b2;
+    color: black;
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dark-mode-switch input {
+    margin-left: 10px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  .main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard.dark .main-content {
+    background-color: #424242;
+    color: white;
+  }
+  

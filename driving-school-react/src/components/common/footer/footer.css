@@ -1,0 +1,188 @@
+.last {
+    background-color: var(--dark);
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.last h2 {
+    font-weight: 500;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+.last .touch .logo {
+    margin-bottom: 20px;
+}
+.last .touch .logo i {
+    font-size: 32px;
+}
+.last .touch .logo span {
+    color: var(--primary);
+    font-size: 37px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.last .touch .call {
+    margin: 15px 0;
+}
+.last .touch .call i {
+    font-size: 19px;
+}
+.last .touch .call span {
+    margin-left: 15px;
+    font-size: 17px;
+}
+.last .links ul li {
+    position: relative;
+    list-style-type: none;
+    margin: 17px 18px;
+    padding: 0 10px;
+    transition: 0.1s;
+}
+.last .links ul li:hover {
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+.last .links ul li:hover a {
+    color: var(--primary);
+}
+.last .links ul li::before {
+    content: '\27A5';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    font-size: 17px;
+}
+.last .links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.last .subscribe .input input {
+    padding: 20px 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #757575;
+    letter-spacing: 1px;
+}
+.last .subscribe .input button {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 20px 12px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.last .subscribe .input button:hover {
+    background-color: #f3be00ec;
+}
+.last .subscribe h3 {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 25px 0;
+}
+.last .subscribe .social {
+    display: flex;
+}
+.last .subscribe .social li {
+    list-style-type: none;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.last .subscribe .social li:hover {
+    background-color: #fff;
+}
+.last .subscribe .social li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.last .subscribe .social li:hover a {
+    color: #000;
+}
+@media screen and (max-width:768px) {
+    .grid4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .last .subscribe .input {
+        max-width: 100%;
+    }
+    .last .subscribe .input button {
+        min-width: 100px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .grid4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .last .subscribe .input {
+        width: 100%;
+    }
+    .last .subscribe .input input {
+        min-width: 200px;
+    }
+    .last .subscribe .input button {
+        min-width: 80px;
+        font-weight: 500;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1300px) {
+    .last h2 {
+        font-size: 25px
+    }
+    .last .touch .call i {
+        font-size: 15px;
+    }
+    .last .touch .call span {
+        font-size: 15px;
+        margin-left: 6px;
+    }
+    .last .subscribe .input {
+        max-width: 100%;
+    }
+    .last .subscribe .input input {
+        min-width: 130px;
+    }
+    .last .subscribe .input button {
+        margin-top: 5px;
+        min-width: 100px;
+        font-weight: 500;
+    }
+}
+footer hr {
+    background-color: #757575;
+    height: 1px;
+}
+.reserved {
+    text-align: center;
+    margin: auto;
+    background-color: var(--dark);
+    color: #fff;
+    padding-top: 10px;
+}
+.reserved p {
+    line-height: 1.7;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    color: #757575;
+}
+.reserved strong {
+    color: var(--primary);
+}
