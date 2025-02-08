@@ -32,7 +32,7 @@ const AboutCard = () => {
                     <div className="two-check">
                         <div className="afordable">
                             <i className='fa fa-check'></i>
-                            <span>Frais abordabless</span>
+                            <span>Frais abordables</span>
                         </div>
                         <div className="best">
                             <i className='fa fa-check'></i>
