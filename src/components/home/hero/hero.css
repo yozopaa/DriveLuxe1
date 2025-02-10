@@ -1,0 +1,149 @@
+.hero {
+    background-image: url("../../../../public/img/carousel-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.hero .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1;
+}
+.hero .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.hero .text h1 {
+    color: #fff;
+    font-size: 70px;
+    z-index: 99;
+}
+.hero .text .button button {
+    position: relative;
+    padding: 20px 60px;
+    border: none;
+    z-index: 100;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.hero .text .button .one {
+    margin-right: 5px;
+    color: #fff;
+    background-color: var(--primary);
+}
+.hero .text .button .one:hover {
+    background-color: #f3be00e1;
+}
+.hero .text .button .two {
+    color: var(--dark);
+}
+@media screen and (max-width:640px) {
+    .hero {
+        height: 60vh;
+    }
+    .hero .overlay {
+        height: 60vh;
+    }
+    .hero .text h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (min-width:641px) and (max-width:992px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero .overlay {
+        height: 50vh;
+    }
+    .hero .text {
+        padding-top: 120px;
+    }
+    .hero .text h1 {
+        font-size: 50px;
+    }
+    .hero .text .button button {
+        margin-top: 20px;
+    }
+}
+.hero .container {
+    margin: auto;
+}
+.row {
+    max-width: 100%;
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    margin: 0 20px;
+    z-index: 111;
+}
+.row .box {
+    display: flex;
+    padding: 40px 25px;
+    box-shadow: -2px 5px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 5px;
+}
+.row .box i {
+    color: #fff;
+    background-color: var(--primary);
+    width: 28px;
+    height: 28px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .box .info {
+    margin-left: 30px;
+    text-align: left;
+}
+.row .box .info h2 {
+    color: var(--dark);
+    font-weight: 500;
+}
+.row .box .info p {
+    margin-top: 10px;
+    color: #757575;
+    line-height: 1.5;
+    font-size: 17px;
+}
+@media screen and (max-width:992px) {
+    .row {
+        flex-direction: column;
+        top: 100px;
+        margin-bottom: 200px;
+    }
+    .row .box {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .container {
+        margin: auto;
+    }
+    .row {
+        margin: 0 100px;
+        flex-direction: column;
+        top: 100px;
+        margin-bottom: 200px;
+    }
+    .row .box {
+        max-width: 100%;
+    }
+}

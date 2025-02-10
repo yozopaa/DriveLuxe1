@@ -1,0 +1,111 @@
+.about {
+    margin-top: 150px;
+    margin-bottom: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.about .img {
+    position: relative;
+}
+.about .img img:first-child {
+    position: absolute;
+    outline: 15px solid #fff;
+    width: 50%;
+    height: 50%;
+    top: -40px;
+    left: -20px;
+}
+.about .img img:last-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about .right .about-info {
+    display: flex;
+    flex-direction: column;
+}
+.about .right .about-info p {
+    margin-top: 10px;
+    color: #757575;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.about .right .about-info .check {
+    margin-top: 30px;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.about .right .about-info .check i {
+    color: var(--primary);
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.about .right .about-info .check span {
+    color: #757575;
+    font-size: 19px;
+    line-height: 1.8;
+}
+.about .right .about-info .button {
+    max-width: fit-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.about .right .about-info .button .button1 {
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 62px;
+    margin: 10px 0;
+}
+.about .right .about-info .button .button1:hover {
+    background-color: #f3be00de;
+}
+.about .right .about-info .button .button2 {
+    border: 3px solid var(--primary);
+    padding: 9px 8px;
+    transition: 0.3s;
+}
+.about .right .about-info .button .button2:hover,
+.about .right .about-info .button .button2:hover span {
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+.about .right .about-info .button .button2 i {
+    color: #fff;
+    background-color: var(--primary);
+    padding: 10px;
+}
+.about .right .about-info .button .button2 span {
+    color: var(--primary);
+    margin: 10px 12px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s;
+}
+@media screen and (max-width:992px) {
+    .about .flexsm {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:993px)  {
+    .about .flexsm {
+        flex-direction: row;
+    }
+    .about .left {
+        text-align: center;
+    }
+    .about .right .about-info .check {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .about .right .about-info .button {
+        flex-direction: column;
+    }
+}

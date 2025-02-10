@@ -1,0 +1,299 @@
+.top {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 12px 70px 12px 52px;
+}
+.top i {
+    color: var(--primary);
+}
+.top .left span,
+.top .right span {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.top .left .street {
+    margin-right: 40px;
+}
+.top .right .phone {
+    margin-right: 30px;
+    font-size: 15px;
+}
+.top .right ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 17px;
+    width: 20px;
+}
+.top .right ul li a {
+    border-left: 1px solid #f3be0065;
+    padding: 13px;
+    text-align: center;
+    margin: auto;
+}
+.top .right ul li:nth-child(1) a {
+    border: none;
+}
+.top .right ul li i {
+    transition: 0.5s;
+    font-size: 18px;
+    color: #bfa442b2;
+}
+.top .right ul li a:hover i {
+    color: #f3be00b2;
+}
+@media screen and (max-width:992px) {
+    .top {
+        display: none;
+    }
+}
+.head .logo {
+    padding: 25px 50px;
+    cursor: pointer;
+    position: relative;
+}
+.head .logo::after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #0c2b4b3d;
+    height: 100%;
+    top: 0;
+    margin-left: 50px;
+}
+.head .logo i {
+    color: var(--primary);
+    font-size: 30px;
+}
+.head .logo span {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: var(--dark);
+}
+.head .flex1 {
+    display: flex;
+}
+.head .nav ul {
+    margin-right: 30px;
+}
+.head .nav ul li {
+    list-style-type: none;
+    padding: 9px 15px;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.head .nav ul li:hover ,
+.head .nav ul li:hover a,
+.head .nav ul li:hover span {
+    color: var(--primary);
+}
+.head .nav ul li:hover span {
+    cursor: pointer;
+}
+.head .nav ul li a,
+.head .nav ul li span {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.head .nav ul i {
+    margin-left: 5px;
+}
+.head .nav .pages:hover .inside {
+    visibility: visible;
+    opacity: 1;
+}
+.head .nav .pages {
+    position: relative;
+}
+.head .nav .inside {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background-color: var(--light);
+    padding: 0 30px 0 5px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+    transition: 0.5s;
+}
+.head .nav .inside li a {
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.head .nav .inside li:hover a {
+    color: var(--dark);
+}
+.head .btn1 {
+    background-color: var(--primary);
+    padding: 35px 60px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.head .btn1:hover {
+    background-color: #f3be00cc;
+    cursor: pointer;
+}
+.head .btn1 i {
+    margin-left: 10px;
+}
+.head .toggle {
+    display: none;
+}
+@media screen and (max-width:992px) {
+    .head .nav .flex,
+    .head .btn1 {
+        display: none;
+    }
+    .head .logo {
+        padding: 20px 30px 10px ;
+    }
+    .head .logo::after {
+        margin-left: 25px;
+    }
+    .head .logo i {
+        font-size: 24px;
+    }
+    .head .logo span {
+        font-size: 28px;
+    }
+    .head .toggle {
+        display: block;
+        margin-right: 25px;
+    }
+    .head .toggle button {
+        padding: 8px 15px;
+        border: 1px solid #85858573;
+        background-color: #fff;
+        color: #85858573;
+        font-size: 25px;
+    }
+    .head .small {
+        position: absolute;
+        top: 63px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 15px;
+        z-index: 1000;
+    }
+    .head .flex1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .head .small li a,
+    .head .small li span {
+        color: #fff;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .head .pages:hover .inside {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: var(--light);
+        width: 100%;
+        padding: 2px;
+        border: 1px solid #d6d6d6;
+    }
+    .head .pages:hover .inside li {
+        padding: 5px 20px;
+    }
+    .head .pages:hover .inside li a {
+        margin: 2px;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1060px) {
+    .head .logo {
+        padding: 10px 10px 10px 20px;
+    }
+    .head .logo::after {
+        height: 14vh;
+        top: -22px;
+        margin-left: 50px;
+    }
+    .head .logo i {
+        font-size: 22px;
+    }
+    .head .logo span {
+        font-size: 25px;
+    }
+    /* Updated profile button styles in header.css */
+.user-profile .btn1 {
+    display: inline-flex !important;
+    align-items: center !important;
+    background-color: white !important;
+    border: 2px solid #f3be00b2;
+    padding: 12px 25px !important;
+    gap: 10px;
+    height: 100%;
+}
+
+.user-profile .btn1:hover {
+    background-color: #f8f8f8 !important;
+}
+
+.user-profile .MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #f3be00b2 !important;
+    color: white !important;
+    font-size: 16px !important;
+    margin: 0 !important;
+}
+
+.user-profile .btn1 span {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: normal !important;
+}
+
+.user-profile .btn1 i {
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Menu styling */
+.MuiMenu-paper {
+    margin-top: 8px;
+    min-width: 180px;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+}
+
+.MuiMenuItem-root {
+    padding: 12px 20px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+}
+
+.MuiMenuItem-root:hover {
+    background-color: #f3be00b2 !important;
+    color: white !important;
+}
+
+@media screen and (max-width: 992px) {
+    .user-profile .btn1 {
+        padding: 12px !important;
+    }
+    
+    .user-profile .btn1 span,
+    .user-profile .btn1 i {
+        display: none !important;
+    }
+
+    .user-profile .MuiAvatar-root {
+        margin: 0 !important;
+    }
+}
+}

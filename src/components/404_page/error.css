@@ -1,0 +1,56 @@
+.error {
+    margin: 10px auto 200px;
+    text-align: center;
+
+}
+.error i {
+    font-size: 80px;
+    color: var(--primary);
+}
+.error h2 {
+    color: var(--dark);
+    font-size: 90px;
+    margin-top: 10px;
+}
+.error h1 {
+    color: var(--dark);
+    font-size: 45px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.error p {
+    color: #757575;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 40px auto;
+}
+.error button {
+    padding: 20px 50px;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.error button:hover {
+    background-color: #f3be00e3;
+}
+@media screen and (max-width:992px) {
+    .error i {
+        font-size: 65px;
+    }
+    .error h2 {
+        font-size: 62px;
+    }
+    .error h1 {
+        font-size: 40px;
+    }
+    .error p {
+        max-width: 510px;
+    }
+    .error button {
+        font-size: 18px;
+    }
+}
