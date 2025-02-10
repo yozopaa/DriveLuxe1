@@ -89,7 +89,7 @@ const SignUp = () => {
     <Box display="flex" justifyContent="center" alignItems="center" height="90vh" bgcolor="#f5f5f5">
       <Paper elevation={3} sx={{ p: 3, maxWidth: 600, width: '100%', textAlign: 'center', position: 'relative' }}>
         <Typography variant="h5" fontWeight="bold" mb={2}>
-          Inscription à center
+          Inscription à DriveLuxe
         </Typography>
 
         <InputField 
