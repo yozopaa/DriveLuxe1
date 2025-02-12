@@ -81,7 +81,7 @@ const Header = () => {
                     <div className="right flex">
                         <div className="nav">
                             <ul className={navlist ? "small flex1" : "flex"}>
-                                <li><Link to='/'>Accueil</Link></li>
+                                <li><Link to='/'>Accueill</Link></li>
                                 <li><Link to='/about'>À propos</Link></li>
                                 <li><Link to='/courses'>Cours</Link></li> 
                                 <li className='pages'>
